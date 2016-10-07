@@ -13,7 +13,7 @@ class TestBasics(unittest.TestCase):
 		result = rpn.calculate("5 3 *")
 		self.assertEqual(15, result)
 	def test_divide(self):
-		result = rpn.calculate("20 5 -")
+		result = rpn.calculate("20 5 /")
 		self.assertEqual(4, result)
 	def test_toomanythings(self):
 		with self.assertRaises(TypeError):
