@@ -19,5 +19,5 @@ class TestBasics(unittest.TestCase):
 		with self.assertRaises(TypeError):
 			rpn.calculate("1 2 3 +")
 	def test_carat(self):
-		result = rpn.calculate(3 2 ^)
+		result = rpn.calculate("3 2 ^")
 		self.assertEqual(9, result)
